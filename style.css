@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("src/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5vw;
+
+    padding-top: 5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.serce{
+    width: 10vw;
+    animation: heart-roll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#baner img{
+    width: 75vw;
+}
+
+#menu{
+    width: 25%;
+    padding-top: 5vw;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li img{
+    width: 20vw;
+    animation: leviosa;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+#menu ul li{
+    margin-top: 2vw;
+}
+
+#kontent{
+    width: 73%;
+    border: 3px solid black;
+    background-color: rgba(255, 228, 196, 80%);
+    border-radius: 3vw;
+
+    box-shadow: 9px 13px 37px -8px rgba(66, 68, 90, 1), inset 7px 3px 44px -18px rgba(144, 135, 124, 1);
+}
+
+#tytul{
+    font-family: RetroSignature;
+    font-size: 15vw;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#tekst{
+    font-size: 3vw;
+    line-height: 4vw;
+    margin: 3vw;
+}
+
+#zalety li{
+    list-style-position: inside
+}
+
+@font-face {
+    font-family: RetroSignature;
+    src: url(fonts/RetroSignature.otf);
+}
+
+@keyframes leviosa {
+    0%{
+        transform: translateY(-1vw);
+    }
+    50%{
+        transform: translateY(1vw);
+    }
+    100%{
+        transform: translateY(-1vw);
+    }
+}
+
+@keyframes heart-roll {
+    0%{
+        transform: rotate(-15deg);
+        
+    }
+    25%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+        
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    85%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+        
+    }
+}
